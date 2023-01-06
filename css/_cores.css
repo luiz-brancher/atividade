@@ -1,0 +1,137 @@
+@charset "utf-8";
+/* CSS Document */
+/*
+	Mudar cores/sobreescrever cores das classes e elementos neste  arquivo css, 
+	para não afetar a estrutura do html.
+ 	Customizar cores dos elementos do bootstrap aqui, para manter a organização.
+*/
+body{
+	background-color:#f5f5f5;	
+}
+
+.paper{	
+	border-color:rgba(223,180,119,0.2);	
+}
+
+.legenda_imagem{
+	color:inherit
+}
+.borda-abaixo{
+	border-color:#efefef;
+}
+
+.cor-padrao-curso-texto{
+	color:rgba(84,184,170,1.00);
+}
+.cor-padrao-curso-fundo{
+	background-color:rgba(84,184,170,1.00);
+	color:#fff;
+}
+
+img.arredondar{
+	border-color:#f5f5f5;
+} 
+
+h1,h2,h3,h4,h5{
+	color:inherit;
+}
+
+table.senac {
+	border-color:#E8E8E8;
+}
+table.senac th{
+	background-color:rgba(84,184,170,1.00);
+	color:#fff;
+	border-color:#dedede;		
+}
+table.senac td{
+	background-color:#fefefe;
+	color:#ccc;	
+	border-color:#dedede;		
+}
+header.senac{	
+	background-color:#00be9c;	
+}
+.video-player{
+	border-color:#000000;
+}
+
+#sombra{	
+	background-color:rgba(0,0,0,0.15);
+}
+.header-tecnicos{
+	background-color:#00be9c;
+}
+
+#nome-curso{
+    color: #fff;
+}
+.fundo-tecnicos{
+	background-color:#fff;
+	border-bottom:3px solid #ccc;
+}
+.footer-tecnicos{
+	
+}
+.caixa-destaque{
+	background-color:#fff4e1;
+}
+
+.caixa-destaque-livre{
+	background-color:#fff4e1;
+}
+.caixa-ta-na-midia{
+	color:#fff;
+	background-color:#32c0e1;
+}
+.icone-transcricao > a{
+	background-color:#CB6E70;
+	color:#fff;
+}
+.icone-transcricao > a:hover{
+	background-color: rgba(255,38,38,1);
+}
+/* 
+botões
+*/
+a.botao-transcricao{
+	background-color:#CB6E70;
+	color:#fff;
+}
+a.botao-transcricao:hover{
+	background-color: rgba(255,38,38,1);
+}
+
+.botao{	
+	background-color:#fff4e1;	
+	color:#16A085;
+}
+.botao:hover{
+	text-decoration:none;
+	background-color:#ffdfa6;
+}
+
+a.botao-pdf{
+	background-color:#fff4e1;
+	color:#16A085;	
+	
+}
+a.botao-pdf:hover{	
+	color:inherit;
+	background-color:#ffdfa6;
+
+}
+
+
+.anim-troca-cor:hover{
+	background-color:rgba(84,179,127,1.00);
+	
+}
+
+ul.senac{
+
+}
+/* coloca um dos icones ao lado de um titulo */
+.texto-com-icone{
+
+}

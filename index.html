@@ -1,0 +1,843 @@
+﻿<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+  <title>Atividade</title>
+
+  <!-- Bootstrap -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="fonts/roboto.css" rel="stylesheet">
+  <link href="css/tecnicos_senac.css" rel="stylesheet">
+  <link href="css/cores.css" rel="stylesheet">
+  <link href="css/sncload.css" rel="stylesheet">
+  <link href="css/magnific-popup.css" rel="stylesheet">
+  <link href="css/custom.css" rel="stylesheet">
+  <link href="css/fa/css/font-awesome.min.css" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="css/print.css">
+  <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
+      <script src="js/html5shiv.min.js"></script>
+      <script src="js/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body onLoad="Javascript:document.getElementById('sncloader').style.display='none'">
+  
+  <!-- MARCA D´ÁGUA -->
+  <img src="images/logo_senac_colorido.png" id="marcadaguaLogo">
+  <!-- /MARCA D´ÁGUA -->
+  <div id='sncloader' class='over-loader'>
+    <div class="over-cell">
+      <div id="sncload"></div>
+    </div>
+  </div>
+  <header class="senac">
+    <div class="header-tecnicos container">
+      <h1 id="nome-curso">Segurança do Trabalho</h1>
+      <div id="logo-senac"><img src="images/logo-senac.png" alt="logo do senac"></div>
+    </div>
+    <div id="sombra"></div>
+  </header>
+  <div class="progress">
+    <div class="progress-bar" role="progressbar" id="progresso" style="width: 100%" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+  </div>
+  
+  <div class="container fundo-tecnicos">
+  
+    <div id="pagina1" class="pagina"  style="">
+      <p>Preencha a tabela a seguir com a classificação e a gradação de riscos de cada setor. A planilha servirá de
+        apoio para a representação dos riscos no mapa de riscos.</p>
+      <div class="tabela" id="tabela1">
+        <div class="col-lg-3 raia">
+          <div class="cabecalho claro">
+            Setor
+          </div>
+          <div class="conteudo">
+            <p>Administrativo</p>
+          </div>
+        </div>
+        <div class="col-lg-3 raia tres">
+          <div class="cabecalho escuro">
+            Classificação
+          </div>
+
+          <div class="conteudo">
+            <p>Físico</p>
+          </div>
+          <div class="conteudo">
+            <p>Químico</p>
+          </div>
+          <div class="conteudo">
+            <p>Biológico</p>
+          </div>
+
+        </div>
+        <div class="col-lg-3 raia tres">
+          <div class="cabecalho claro">
+            Agentes de risco encontrados
+          </div>
+          <div class="conteudo d-inline-block">
+            <div class="cursor">
+              <input type="text" class="form-control text add-hashtag" placeholder="Digite o agente e pressione Enter." id="">
+              <i></i>
+            </div>
+            <div id="hashtags" class="hashtags">
+            </div>
+          </div>
+          <div class="conteudo d-inline-block">
+            <div class="cursor">
+              <input type="text" class="form-control text add-hashtag" placeholder="Digite o agente e pressione Enter." id="">
+              <i></i>
+            </div>
+            <div id="hashtags" class="hashtags">
+            </div>
+          </div>
+          <div class="conteudo d-inline-block">
+            <div class="cursor">
+              <input type="text" class="form-control text add-hashtag" placeholder="Digite o agente e pressione Enter." id="">
+              <i></i>
+            </div>
+            <div id="hashtags" class="hashtags">
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 raia tres">
+          <div class="cabecalho escuro">
+            Grau de risco <a class="btn-informacao" data-toggle="modal" href='#modal-id'>i</a>
+          </div>
+          <div class="conteudo d-inline-block">
+            <select class="form-control" name="" id="">
+              <option value="">Selecione</option>
+              <option value="Pequeno">Pequeno</option>
+              <option value="Médio">Médio</option>
+              <option value="Grande">Grande</option>
+            </select>
+            <div id="hashtags" class="hashtags">
+            </div>
+          </div>
+          <div class="conteudo d-inline-block">
+            <select class="form-control" name="" id="">
+              <option value="">Selecione</option>
+              <option value="Pequeno">Pequeno</option>
+              <option value="Médio">Médio</option>
+              <option value="Grande">Grande</option>
+            </select>
+            <div id="hashtags" class="hashtags">
+            </div>
+          </div>
+          <div class="conteudo d-inline-block">
+            <select class="form-control" name="" id="">
+              <option value="">Selecione</option>
+              <option value="Pequeno">Pequeno</option>
+              <option value="Médio">Médio</option>
+              <option value="Grande">Grande</option>
+            </select>
+            <div id="hashtags" class="hashtags">
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 raia tres">
+          <div class="cabecalho claro">
+            Cor
+          </div>
+          <div class="conteudo d-inline-block">
+            <select class="form-control" name="" id="">
+              <option value="">Selecione</option>
+              <option value="Vermelho">Vermelho</option>
+              <option value="Verde">Verde</option>
+              <option value="Marrom">Marrom</option>
+            </select>
+            <div id="hashtags" class="hashtags">
+            </div>
+          </div>
+          <div class="conteudo d-inline-block">
+            <select class="form-control" name="" id="">
+              <option value="">Selecione</option>
+              <option value="Vermelho">Vermelho</option>
+              <option value="Verde">Verde</option>
+              <option value="Marrom">Marrom</option>
+            </select>
+            <div id="hashtags" class="hashtags">
+            </div>
+          </div>
+          <div class="conteudo d-inline-block">
+            <select class="form-control" name="" id="">
+              <option value="">Selecione</option>
+              <option value="Vermelho">Vermelho</option>
+              <option value="Verde">Verde</option>
+              <option value="Marrom">Marrom</option>
+            </select>
+            <div id="hashtags" class="hashtags">
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="engloba-btn">
+        <div class="btn-avancar">
+          <a href="#pagina2">AVANÇAR</a>
+        </div>
+      </div>
+    </div>
+
+    <div id="pagina2" class="pagina" style="display: none;">
+      <p>Preencha a tabela a seguir com a classificação e a gradação de riscos de cada setor. A planilha servirá de
+        apoio para a representação dos riscos no mapa de riscos.</p>
+      <div class="tabela" id="tabela2">
+        <div class="col-lg-3 raia">
+          <div class="cabecalho claro">
+            Setor
+          </div>
+          <div class="conteudo">
+            <p>Soldagem</p>
+          </div>
+        </div>
+        <div class="col-lg-3 raia tres">
+          <div class="cabecalho escuro">
+            Classificação
+          </div>
+
+          <div class="conteudo">
+            <p>Físico</p>
+          </div>
+          <div class="conteudo">
+            <p>Químico</p>
+          </div>
+          <div class="conteudo">
+            <p>Biológico</p>
+          </div>
+
+        </div>
+        <div class="col-lg-3 raia tres">
+          <div class="cabecalho claro">
+            Agentes de risco encontrados
+          </div>
+          <div class="conteudo d-inline-block">
+            <div class="cursor">
+              <input type="text" class="form-control text add-hashtag" placeholder="Digite o agente e pressione Enter." id="">
+              <i></i>
+            </div>
+            <div id="hashtags" class="hashtags">
+            </div>
+          </div>
+          <div class="conteudo d-inline-block">
+            <div class="cursor">
+              <input type="text" class="form-control text add-hashtag" placeholder="Digite o agente e pressione Enter." id="">
+              <i></i>
+            </div>
+            <div id="hashtags" class="hashtags">
+            </div>
+          </div>
+          <div class="conteudo d-inline-block">
+            <div class="cursor">
+              <input type="text" class="form-control text add-hashtag" placeholder="Digite o agente e pressione Enter." id="">
+              <i></i>
+            </div>
+            <div id="hashtags" class="hashtags">
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 raia tres">
+          <div class="cabecalho escuro">
+            Grau de risco <a class="btn-informacao" data-toggle="modal" href='#modal-id'>i</a>
+          </div>
+          <div class="conteudo d-inline-block">
+            <select class="form-control" name="" id="">
+              <option value="">Selecione</option>
+              <option value="Pequeno">Pequeno</option>
+              <option value="Médio">Médio</option>
+              <option value="Grande">Grande</option>
+            </select>
+            <div id="hashtags" class="hashtags">
+            </div>
+          </div>
+          <div class="conteudo d-inline-block">
+            <select class="form-control" name="" id="">
+              <option value="">Selecione</option>
+              <option value="Pequeno">Pequeno</option>
+              <option value="Médio">Médio</option>
+              <option value="Grande">Grande</option>
+            </select>
+            <div id="hashtags" class="hashtags">
+            </div>
+          </div>
+          <div class="conteudo d-inline-block">
+            <select class="form-control" name="" id="">
+              <option value="">Selecione</option>
+              <option value="Pequeno">Pequeno</option>
+              <option value="Médio">Médio</option>
+              <option value="Grande">Grande</option>
+            </select>
+            <div id="hashtags" class="hashtags">
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 raia tres">
+          <div class="cabecalho claro">
+            Cor
+          </div>
+          <div class="conteudo d-inline-block">
+            <select class="form-control" name="" id="">
+              <option value="">Selecione</option>
+              <option value="Vermelho">Vermelho</option>
+              <option value="Verde">Verde</option>
+              <option value="Marrom">Marrom</option>
+            </select>
+            <div id="hashtags" class="hashtags">
+            </div>
+          </div>
+          <div class="conteudo d-inline-block">
+            <select class="form-control" name="" id="">
+              <option value="">Selecione</option>
+              <option value="Vermelho">Vermelho</option>
+              <option value="Verde">Verde</option>
+              <option value="Marrom">Marrom</option>
+            </select>
+            <div id="hashtags" class="hashtags">
+            </div>
+          </div>
+          <div class="conteudo d-inline-block">
+            <select class="form-control" name="" id="">
+              <option value="">Selecione</option>
+              <option value="Vermelho">Vermelho</option>
+              <option value="Verde">Verde</option>
+              <option value="Marrom">Marrom</option>
+            </select>
+            <div id="hashtags" class="hashtags">
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="engloba-btn">
+        <div class="btn-voltar">
+          <a href="#pagina1">VOLTAR</a>
+        </div>
+        <div class="btn-avancar">
+          <a href="#pagina3">AVANÇAR</a>
+        </div>
+      </div>
+    </div>
+
+    <div id="pagina3" class="pagina" style="display: none;">
+      <p>Preencha a tabela a seguir com a classificação e a gradação de riscos de cada setor. A planilha servirá de
+        apoio para a representação dos riscos no mapa de riscos.</p>
+      <div class="tabela" id="tabela3">
+        <div class="col-lg-3 raia">
+          <div class="cabecalho claro">
+            Setor
+          </div>
+          <div class="conteudo">
+            <p>Corte e serralheria</p>
+          </div>
+        </div>
+        <div class="col-lg-3 raia tres">
+          <div class="cabecalho escuro">
+            Classificação
+          </div>
+
+          <div class="conteudo">
+            <p>Físico</p>
+          </div>
+          <div class="conteudo">
+            <p>Químico</p>
+          </div>
+          <div class="conteudo">
+            <p>Biológico</p>
+          </div>
+
+        </div>
+        <div class="col-lg-3 raia tres">
+          <div class="cabecalho claro">
+            Agentes de risco encontrados
+          </div>
+          <div class="conteudo d-inline-block">
+            <div class="cursor">
+              <input type="text" class="form-control text add-hashtag" placeholder="Digite o agente e pressione Enter." id="">
+              <i></i>
+            </div>
+            <div id="hashtags" class="hashtags">
+            </div>
+          </div>
+          <div class="conteudo d-inline-block">
+            <div class="cursor">
+              <input type="text" class="form-control text add-hashtag" placeholder="Digite o agente e pressione Enter." id="">
+              <i></i>
+            </div>
+            <div id="hashtags" class="hashtags">
+            </div>
+          </div>
+          <div class="conteudo d-inline-block">
+            <div class="cursor">
+              <input type="text" class="form-control text add-hashtag" placeholder="Digite o agente e pressione Enter." id="">
+              <i></i>
+            </div>
+            <div id="hashtags" class="hashtags">
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 raia tres">
+          <div class="cabecalho escuro">
+            Grau de risco<a class="btn-informacao" data-toggle="modal" href='#modal-id'>i</a>
+          </div>
+          <div class="conteudo d-inline-block">
+            <select class="form-control" name="" id="">
+              <option value="">Selecione</option>
+              <option value="Pequeno">Pequeno</option>
+              <option value="Médio">Médio</option>
+              <option value="Grande">Grande</option>
+            </select>
+            <div id="hashtags" class="hashtags">
+            </div>
+          </div>
+          <div class="conteudo d-inline-block">
+            <select class="form-control" name="" id="">
+              <option value="">Selecione</option>
+              <option value="Pequeno">Pequeno</option>
+              <option value="Médio">Médio</option>
+              <option value="Grande">Grande</option>
+            </select>
+            <div id="hashtags" class="hashtags">
+            </div>
+          </div>
+          <div class="conteudo d-inline-block">
+            <select class="form-control" name="" id="">
+              <option value="">Selecione</option>
+              <option value="Pequeno">Pequeno</option>
+              <option value="Médio">Médio</option>
+              <option value="Grande">Grande</option>
+            </select>
+            <div id="hashtags" class="hashtags">
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 raia tres">
+          <div class="cabecalho claro">
+            Cor
+          </div>
+          <div class="conteudo d-inline-block">
+            <select class="form-control" name="" id="">
+              <option value="">Selecione</option>
+              <option value="Vermelho">Vermelho</option>
+              <option value="Verde">Verde</option>
+              <option value="Marrom">Marrom</option>
+            </select>
+            <div id="hashtags" class="hashtags">
+            </div>
+          </div>
+          <div class="conteudo d-inline-block">
+            <select class="form-control" name="" id="">
+              <option value="">Selecione</option>
+              <option value="Vermelho">Vermelho</option>
+              <option value="Verde">Verde</option>
+              <option value="Marrom">Marrom</option>
+            </select>
+            <div id="hashtags" class="hashtags">
+            </div>
+          </div>
+          <div class="conteudo d-inline-block">
+            <select class="form-control" name="" id="">
+              <option value="">Selecione</option>
+              <option value="Vermelho">Vermelho</option>
+              <option value="Verde">Verde</option>
+              <option value="Marrom">Marrom</option>
+            </select>
+            <div id="hashtags" class="hashtags">
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="engloba-btn">
+        <div class="btn-voltar">
+          <a href="#pagina2">VOLTAR</a>
+        </div>
+        <div class="btn-avancar">
+          <a href="#pagina4">AVANÇAR</a>
+        </div>
+      </div>
+    </div>
+
+    <div id="pagina4" class="pagina" style="display: none;">
+      <p>Preencha a tabela a seguir com a classificação e a gradação de riscos de cada setor. A planilha servirá de
+        apoio para a representação dos riscos no mapa de riscos.</p>
+      <div class="tabela" id="tabela4">
+        <div class="col-lg-3 raia">
+          <div class="cabecalho claro">
+            Setor
+          </div>
+          <div class="conteudo">
+            <p>Pintura</p>
+          </div>
+        </div>
+        <div class="col-lg-3 raia tres">
+          <div class="cabecalho escuro">
+            Classificação
+          </div>
+
+          <div class="conteudo">
+            <p>Físico</p>
+          </div>
+          <div class="conteudo">
+            <p>Químico</p>
+          </div>
+          <div class="conteudo">
+            <p>Biológico</p>
+          </div>
+
+        </div>
+        <div class="col-lg-3 raia tres">
+          <div class="cabecalho claro">
+            Agentes de risco encontrados
+          </div>
+          <div class="conteudo d-inline-block">
+            <div class="cursor">
+              <input type="text" class="form-control text add-hashtag" placeholder="Digite o agente e pressione Enter." id="">
+              <i></i>
+            </div>
+            <div id="hashtags" class="hashtags">
+            </div>
+          </div>
+          <div class="conteudo d-inline-block">
+            <div class="cursor">
+              <input type="text" class="form-control text add-hashtag" placeholder="Digite o agente e pressione Enter." id="">
+              <i></i>
+            </div>
+            <div id="hashtags" class="hashtags">
+            </div>
+          </div>
+          <div class="conteudo d-inline-block">
+            <div class="cursor">
+              <input type="text" class="form-control text add-hashtag" placeholder="Digite o agente e pressione Enter." id="">
+              <i></i>
+            </div>
+            <div id="hashtags" class="hashtags">
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 raia tres">
+          <div class="cabecalho escuro">
+            Grau de risco<a class="btn-informacao" data-toggle="modal" href='#modal-id'>i</a>
+          </div>
+          <div class="conteudo d-inline-block">
+            <select class="form-control" name="" id="">
+              <option value="">Selecione</option>
+              <option value="Pequeno">Pequeno</option>
+              <option value="Médio">Médio</option>
+              <option value="Grande">Grande</option>
+            </select>
+            <div id="hashtags" class="hashtags">
+            </div>
+          </div>
+          <div class="conteudo d-inline-block">
+            <select class="form-control" name="" id="">
+              <option value="">Selecione</option>
+              <option value="Pequeno">Pequeno</option>
+              <option value="Médio">Médio</option>
+              <option value="Grande">Grande</option>
+            </select>
+            <div id="hashtags" class="hashtags">
+            </div>
+          </div>
+          <div class="conteudo d-inline-block">
+            <select class="form-control" name="" id="">
+              <option value="">Selecione</option>
+              <option value="Pequeno">Pequeno</option>
+              <option value="Médio">Médio</option>
+              <option value="Grande">Grande</option>
+            </select>
+            <div id="hashtags" class="hashtags">
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 raia tres">
+          <div class="cabecalho claro">
+            Cor
+          </div>
+          <div class="conteudo d-inline-block">
+            <select class="form-control" name="" id="">
+              <option value="">Selecione</option>
+              <option value="Vermelho">Vermelho</option>
+              <option value="Verde">Verde</option>
+              <option value="Marrom">Marrom</option>
+            </select>
+            <div id="hashtags" class="hashtags">
+            </div>
+          </div>
+          <div class="conteudo d-inline-block">
+            <select class="form-control" name="" id="">
+              <option value="">Selecione</option>
+              <option value="Vermelho">Vermelho</option>
+              <option value="Verde">Verde</option>
+              <option value="Marrom">Marrom</option>
+            </select>
+            <div id="hashtags" class="hashtags">
+            </div>
+          </div>
+          <div class="conteudo d-inline-block">
+            <select class="form-control" name="" id="">
+              <option value="">Selecione</option>
+              <option value="Vermelho">Vermelho</option>
+              <option value="Verde">Verde</option>
+              <option value="Marrom">Marrom</option>
+            </select>
+            <div id="hashtags" class="hashtags">
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="engloba-btn">
+        <div class="btn-voltar">
+          <a href="#pagina3">VOLTAR</a>
+        </div>
+        <div class="btn-avancar">
+          <a href="#pagina5">AVANÇAR</a>
+        </div>
+      </div>
+    </div>
+
+    <div id="pagina5" class="pagina" style="display: none">
+      <p>Agora, represente a intensidade dos riscos nos setores analisados, conforme preenchimento anterior. Clique no setor para visualizar a tabela correspondente e depois inclua a representação da classificação de risco clicando em <i class="fa fa-plus-circle" aria-hidden="true"></i>, selecionando a cor correspondente ao risco e o tamanho, de acordo com o grau. </p>
+      <div class="table-target"></div>
+      <div class="mapa">
+        <div class="areas area1" >
+          <div class="item-cor marrom medio"></div>
+          <div class="btn-adicionar" style="display: none;">Inserir <i class="fa fa-plus-circle" aria-hidden="true"></i></div>
+          <div class="btn-apagar" style="display: none;">Apagar<i class="fa fa-trash" aria-hidden="true"></i></div>
+        </div>
+        <div class="areas area2" data-target="tabela1">
+          <div class="popup" data-area="area2">
+            <div class="vermelho"></div>
+            <div class="verde"></div>
+            <div class="marrom"></div>
+          </div>
+          <div class="popup2" data-area="area2">
+            <div data-size="pequeno">Grau de risco pequeno</div>
+            <div data-size="medio">Grau de risco médio</div>
+            <div data-size="grande">Grau de risco grande</div>
+          </div>
+          <div class="btn-adicionar" style="display: none;">Inserir <i class="fa fa-plus-circle" aria-hidden="true"></i></div>
+          <div class="btn-apagar" style="display: none;">Apagar<i class="fa fa-trash" aria-hidden="true"></i></div>
+        </div>
+        <div class="areas area3" data-target="tabela3">
+          <div class="popup" data-area="area3">
+            <div class="vermelho"></div>
+            <div class="verde"></div>
+            <div class="marrom"></div>
+          </div>
+          <div class="popup2" data-area="area3">
+            <div data-size="pequeno">Grau de risco pequeno</div>
+            <div data-size="medio">Grau de risco médio</div>
+            <div data-size="grande">Grau de risco grande</div>
+          </div>
+          <div class="btn-adicionar" style="display: none;">Inserir <i class="fa fa-plus-circle" aria-hidden="true"></i></div>
+          <div class="btn-apagar" style="display: none;">Apagar<i class="fa fa-trash" aria-hidden="true"></i></div>
+        </div>
+        <div class="areas area4" data-target="tabela4">
+          <div class="popup" data-area="area4">
+            <div class="vermelho"></div>
+            <div class="verde"></div>
+            <div class="marrom"></div>
+          </div>
+          <div class="popup2" data-area="area4">
+            <div data-size="pequeno">Grau de risco pequeno</div>
+            <div data-size="medio">Grau de risco médio</div>
+            <div data-size="grande">Grau de risco grande</div>
+          </div>
+          <div class="btn-adicionar" style="display: none;">Inserir <i class="fa fa-plus-circle" aria-hidden="true"></i></div>
+          <div class="btn-apagar" style="display: none;">Apagar<i class="fa fa-trash" aria-hidden="true"></i></div>
+        </div>
+        <div class="areas area5" data-target="tabela2">
+          <div class="popup" data-area="area5">
+            <div class="vermelho"></div>
+            <div class="verde"></div>
+            <div class="marrom"></div>
+          </div>
+          <div class="popup2" data-area="area5">
+            <div data-size="pequeno">Grau de risco pequeno</div>
+            <div data-size="medio">Grau de risco médio</div>
+            <div data-size="grande">Grau de risco grande</div>
+          </div>
+          <div class="btn-adicionar" style="display: none;">Inserir <i class="fa fa-plus-circle" aria-hidden="true"></i></div>
+          <div class="btn-apagar" style="display: none;">Apagar<i class="fa fa-trash" aria-hidden="true"></i></div>
+        </div>
+        <div class="areas area6">
+          <div class="item-cor vermelho medio"></div>
+          <div class="item-cor verde medio"></div>
+          <div class="btn-adicionar" style="display: none;">Inserir <i class="fa fa-plus-circle" aria-hidden="true"></i></div>
+          <div class="btn-apagar" style="display: none;">Apagar<i class="fa fa-trash" aria-hidden="true"></i></div>
+        </div>
+      </div>
+      <div class="engloba-btn">
+        <div class="btn-voltar">
+          <a href="#pagina4">VOLTAR</a>
+        </div>
+        <div class="btn-salvar" id="btPrint">
+          <a>SALVAR<i class="fa fa-save" aria-hidden="true"></i></a>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+
+
+  <div class="modal fade" id="modal-id">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        </div>
+        <div class="modal-body">
+          <p>Para identificar o grau de risco, você pode tomar como base a tabela a seguir:</p>
+          <table class="table senac text-center">
+            <thead>
+              <tr>
+                <th>Agentes de risco</th>
+                <th>Pequeno</th>
+                <th>Médio</th>
+                <th>Grande</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>
+                  <p>Físico, químico e biológico</p>
+                </td>
+                <td><p>Quando o agente está presente no ambiente, mas a concentração ou a intensidade não tem
+                    capacidade de agredir os trabalhadores ou causar lesão, de forma a ser considerado
+                    desprezível.</p></td>
+                <td>
+                  <p>Quando os agentes agressivos estiverem presentes em número significativo no setor ou abaixo dos
+                    limites de tolerância, mas possam gerar desconforto ao trabalhador. Neste caso, há medidas de
+                    controle implementadas.</p>
+                </td>
+                <td>
+                  <p>Quando não existem dados precisos sobre concentração, intensidade, tempo de exposição, mas
+                    comprovadamente os agentes estejam prejudicando a saúde dos trabalhadores, mesmo existindo alguma
+                    medida de proteção;</p>
+                  <p>ou<br>
+                    quando a concentração, a intensidade, o tempo de exposição estejam acima do limite de tolerância;
+                    </p>
+                  <p>ou<br>
+                    quando não exista medida de controle para os agentes e comprovadamente eles possam gerar danos à saúde dos trabalhadores.
+                    </p>
+                  
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!--  Em caso de footer personalizado utilizar esse elemento e adicionar a classe customizada
+    <footer>
+    </footer>
+	-->
+  <!-- carrega todas as imagens dos icones nesta div
+ caso queira adicionar mais imagens de novos icones do css,
+ ou qualquer imagem que deva ser contabilizada durante a fase
+ de loading, referenciar aqui.
+ -->
+  <div class="ico-div-loader">
+    <!-- adicionar as imagens customizadas aqui abaixo -->
+  </div>
+
+
+
+  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+  <script src="js/jquery.min.js"></script>
+  <!-- Include all compiled plugins (below), or include individual files as needed -->
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/jquery.magnific-popup.min.js"></script>
+  <script src="js/scripts.js"></script>
+  <script src="js/html2canvas.min.js"></script>
+    <script src="js/jspdf.min.js"></script>
+</body>
+
+</html>
+<script>
+  
+  // JS ABRE INDICAÇÕES PRINT
+  $(function () {
+    $(".abrirPDFobs").click(function () {
+      $(".pdfobs").fadeIn(550);
+    });
+    $(".fecharPDFobs").click(function () {
+      $(".pdfobs").fadeOut(550);
+    });
+  });
+  // /JS ABRE INDICAÇÕES PRINT
+  //inicializa zoom na imagem
+  $('.zoom-imagem').magnificPopup({
+    type: 'image',
+    mainClass: 'mfp-with-zoom', // this class is for CSS animation below
+    zoom: {
+      enabled: true, // By default it's false, so don't forget to enable it
+
+      duration: 300, // duration of the effect, in milliseconds
+      easing: 'ease-in-out', // CSS transition easing function
+
+      // The "opener" function should return the element from which popup will be zoomed in
+      // and to which popup will be scaled down
+      // By defailt it looks for an image tag:
+      opener: function (openerElement) {
+        // openerElement is the element on which popup was initialized, in this case its <a> tag
+        // you don't need to add "opener" option if this code matches your needs, it's defailt one.
+        return openerElement.is('img') ? openerElement : openerElement.find('img');
+      }
+    },
+    image: {
+      markup: '<div class="mfp-figure">' +
+        '<div class="mfp-close"></div>' +
+        '<div class="mfp-img"></div>' + // Floated left
+        '<div class="mfp-bottom-bar">' + '<figcaption>' + '<div class="mfp-title" style="text-align:center"></div>' +
+        '<div class="mfp-counter"></div>' + '</figcaption>' +
+        '</div>' +
+        '</div>', // Popup HTML markup. `.mfp-img` div will be replaced with img tag, `.mfp-close` by close button
+
+      cursor: 'mfp-zoom-out-cur', // Class that adds zoom cursor, will be added to body. Set to null to disable zoom out cursor.
+
+      tError: '<a href="%url%">A imagem</a> não pode ser carregada.' // Error message
+    }
+  });
+
+  //inicializa popover
+  $(function () {
+    $('[data-toggle="popover"]').popover()
+  })
+  //inicializa tooltip
+  $(function () {
+    $('[data-toggle="tooltip"]').tooltip()
+  })
+  
+</script>
+<!-- Script de configuração do HANDTALK -->
+<script src='//api.handtalk.me/plugin/latest/handtalk.min.js'></script>
+<script>
+  var ht = new
+    HT({
+
+      token: 'bf5b7efb148a829a126a0e0c9fd533bf',
+
+      // Habilita o tradutor de vídeos
+      videoEnabled: true,
+
+      // Habilita embeds do Youtube
+      ytEmbedReplace: true
+
+    });
+</script>
+<!-- --------------------------------------------------------------------- -->
