@@ -127,62 +127,67 @@ document.getElementById('btPrint').addEventListener('click', function(){
   $('.engloba-btn').hide()
   $('body').attr('style','background-image:unset;')
   $('#pagina1').prepend("<span style='font-size:16px'><strong>Aluno:</strong> " + nomeUsuario +"</span>")
-
-  html2canvas(document.body).then(function(canvas) {
-     var a = canvas; //adm
-     var b = a.toDataURL('image/png'); 
-     console.log(b)
-     var doc = new jsPDF('l', 'mm');
-     doc.addImage(b, 'PNG', 0, -10, 300, 300*(9/16));
-     doc.addPage()
+  $('#pagina2').show()
+  $('#pagina3').show()
+  $('#pagina4').show()
+  $('#pagina5').show()
+  javascript: print()
+  
+  // html2canvas(document.body).then(function(canvas) {
+  //    var a = canvas; //adm
+  //    var b = a.toDataURL('image/png'); 
+  //    console.log(b)
+  //    var doc = new jsPDF('l', 'mm');
+  //    doc.addImage(b, 'PNG', 0, -10, 300, 300*(9/16));
+  //    doc.addPage()
      
-     $('#pagina1').hide();
-     $('#pagina2').show();
-      html2canvas(document.body).then(function(canvas) {
-        var c = canvas; //soldagem
-        var d = c.toDataURL('image/png');
-        console.log(d)
-        
-        
-        doc.addImage(d, 'PNG', 0, -10, 300, 300*(9/16));
-        doc.addPage()
-        $('#pagina2').hide();
-      });    
-        $('#pagina3').show();
-        $('#pagina2').hide();
-        html2canvas(document.body).then(function(canvas) {
-          var e = canvas;
-          var f = e.toDataURL('image/png'); 
+  //   $('#pagina1').hide();
+  //   $('#pagina2').show();
+  //    html2canvas(document.body).then(function(canvas) {
+  //      var c = canvas; //soldagem
+  //      var d = c.toDataURL('image/png');
+  //      console.log(d)
+       
+       
+  //    doc.addImage(d, 'PNG', 0, -10, 300, 300*(9/16));
+  //     doc.addPage()
+  //     $('#pagina2').hide();
+  //   });    
+  //     $('#pagina3').show();
+  //     $('#pagina2').hide();
+  //     html2canvas(document.body).then(function(canvas) {
+  //       var e = canvas;
+  //       var f = e.toDataURL('image/png'); 
           
         
-          doc.addImage(f, 'PNG', 0, -10, 300, 300*(9/16));
-          doc.addPage()
-          $('#pagina3').hide();
-        });    
-        $('#pagina4').show();
-        $('#pagina3').hide();
-        html2canvas(document.body).then(function(canvas) {
-          var g = canvas;
-          var h = g.toDataURL('image/png'); 
+  //     doc.addImage(f, 'PNG', 0, -10, 300, 300*(9/16));
+  //     doc.addPage()
+  //     $('#pagina3').hide();
+  //   });    
+  //   $('#pagina4').show();
+  //   $('#pagina3').hide();
+  //   html2canvas(document.body).then(function(canvas) {
+  //     var g = canvas;
+  //     var h = g.toDataURL('image/png'); 
           
         
-          doc.addImage(h, 'PNG', 0, -10, 300, 300*(9/16));
-          doc.addPage()
-          $('#pagina4').hide();
-        }); 
-        $('#pagina5').show();
-        $('#pagina4').hide();
-        html2canvas(document.body).then(function(canvas) {
-          var i = canvas;
-          var j = i.toDataURL('image/png'); 
+  //     doc.addImage(h, 'PNG', 0, -10, 300, 300*(9/16));
+  //     doc.addPage()
+  //     $('#pagina4').hide();
+  //   }); 
+  //       $('#pagina5').show();
+  //       $('#pagina4').hide();
+  //       html2canvas(document.body).then(function(canvas) {
+  //         var i = canvas;
+  //         var j = i.toDataURL('image/png'); 
           
         
-          doc.addImage(j, 'PNG', 0, -10, 300, 300*(9/16));
-          doc.save(nomeUsuario+'.pdf');   
-          $('body').removeAttr('style')
-          $('header').show()
-          $('.engloba-btn').show()
-          $('.progress').css('display', 'none');
-        }); 
-  });             
+  //         doc.addImage(j, 'PNG', 0, -10, 300, 300*(9/16));
+  //         doc.save(nomeUsuario+'.pdf');   
+  //         $('body').removeAttr('style')
+  //         $('header').show()
+  //         $('.engloba-btn').show()
+  //         $('.progress').css('display', 'none');
+  //       }); 
+  // });             
 })
