@@ -131,8 +131,17 @@ document.getElementById('btPrint').addEventListener('click', function(){
   $('#pagina3').show()
   $('#pagina4').show()
   $('#pagina5').show()
-  javascript: print()
+  // javascript: print()
+
+  // tentando tirar o jspdf da equacao
+  html2canvas(document.body).then((canvas)=>{
+    const base64image = canvas.toDataURL('image/png');
+    window.location.href = base64image;
+    // window.open(base64image, '_blank')
+  })
   
+  // comentando a função do canvas e substituindo pelo print() acima
+
   // html2canvas(document.body).then(function(canvas) {
   //    var a = canvas; //adm
   //    var b = a.toDataURL('image/png'); 
